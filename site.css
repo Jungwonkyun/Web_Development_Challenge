@@ -1,13 +1,26 @@
+body {
+    /*body 안에 있는 요소를 가운데로 정렬시키고 싶을 때 사용 
+    text-align은 태그 안의 요소들의 배치를 담당한다 그래서 이미지 태그에다가
+    쓴다고해서 이미지의 정렬이 바뀌지 않고 이미지 밖에 쌓여져 있는 바디 태그를 수정해야함  */
+    text-align: center;
+    background-color: rgb(233,215,207);
+    margin: 50px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;   
+}
+
 h1 {
   /*fall-back font 두번째 요소 =  첫번째 폰트를 못 불러올 떄 대신 로드 */
   font-family: "Oswald", sans-serif;
-  text-align: center;
   color: rgb(83, 75, 75);
 }
 
 p {
-  font-family: "Fira Sans", sans-serif;
-  text-align: center;
+  font-family: "Fira Sans", sans-serif;;
   color: rgb(83, 75, 75);
 }
 
@@ -26,3 +39,6 @@ a:hover {
   font-weight: bold;
   font-size: 52px;
 }
+
+
+
