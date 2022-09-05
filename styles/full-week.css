@@ -1,33 +1,64 @@
-h1{
-  font-size: 48px;
-  color: rgb(71,62,62)
+header{
+  margin-bottom: 64px;
 }
 
-a{
-  background-color: rgb(167,1,78);
+h1 {
+  font-size: 48px;
+  color: rgb(71, 62, 62);
+  margin: 12px, 0;
+}
+
+/* 얘는 결합자를 사용하는 경우, header의 p 속성에 대한 스타일 변경 */
+/*header p {
+  margin-bottom: 36px;
+}*/
+
+/* 얘는 id 선택자를 이용해서 특정 부분의 스타일 업데이트 */
+#description{
+  margin-bottom: 36px;
+}
+
+a {
+  padding: 12px 48px;
+  background-color: rgb(167, 1, 78);
   color: white;
+  border: 1px solid rgb(167, 1, 78);
   border-radius: 4px;
   font-size: 23px;
 }
 
-a:hover{
-
+a:hover {
   text-decoration: none;
-  background-color: rgb(180,12,90);
+  background-color: rgb(180, 12, 90);
 }
 
-ol{
+ol {
   list-style: none;
+  width: 500px;
+  /* margin은 순서대로 위 오른쪽 아래 왼쪽, 오른쪽 왼쪽 auto 해주면 중앙정렬이 된다 */
+  margin: 36px auto 0 auto;
+  padding: 0;
 }
 
-
-li{ 
-  background-color: rgb(223,136,124);
+li {
+  padding: 16px;
+  background-color: rgb(223, 136, 124);
   border-radius: 6px;
   margin: 32px;
 }
 
+h2 {
+  color: rgb(78, 13, 5);
+  font-family: "Oswald", "sans-sarif";
+}
 
+/*결합자 사용하였을 때 */
+main p {
+  margin: 12px;
+  color: rgb(71,29,22);
+}
 
-
-
+/* 클래스를 사용하였을 떄, 우선순위는 클래스가 결합자 보다 높다 */
+.highlight-goal {
+  background-color: rgb(226,115,101);
+}
