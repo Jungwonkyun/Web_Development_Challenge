@@ -15,7 +15,7 @@ h1 {
 
 /* 얘는 id 선택자를 이용해서 특정 부분의 스타일 업데이트 */
 #description{
-  margin-bottom: 36px;
+  margin: 0px;
 }
 
 a {
@@ -25,6 +25,10 @@ a {
   border: 1px solid rgb(167, 1, 78);
   border-radius: 4px;
   font-size: 23px;
+  
+  /*인라인 요소와 블록 요소에 대해서 자세하게 알아보고 차이를 알자, + 인라인 블록의 역할*/
+  display: inline-block;
+  margin: 12px 0;
 }
 
 a:hover {
@@ -35,6 +39,7 @@ a:hover {
 ol {
   list-style: none;
   width: 500px;
+  
   /* margin은 순서대로 위 오른쪽 아래 왼쪽, 오른쪽 왼쪽 auto 해주면 중앙정렬이 된다 */
   margin: 36px auto 0 auto;
   padding: 0;
