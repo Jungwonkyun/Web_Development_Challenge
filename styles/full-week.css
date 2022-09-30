@@ -15,7 +15,7 @@ h1 {
 
 /* 얘는 id 선택자를 이용해서 특정 부분의 스타일 업데이트 */
 #description{
-  margin: 0px;
+  margin: 24px;
 }
 
 a {
